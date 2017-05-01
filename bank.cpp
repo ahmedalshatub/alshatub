@@ -45,7 +45,7 @@ int main(){
 	
 	
 	
-	cout<<endl<<endl<<endl<<endl<<endl;
+	cout<<"\n\n\n\n";
 	system("pause");
 	return(0);
 }
