@@ -1,0 +1,36 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+int n=6;
+int arr[n][n];
+int i,j,k=0;
+for (i = 0; i < n; ++i) {
+	for (j = 0; j < n; ++j){
+		arr[i][j]=k;
+	k++;}
+}cout<<endl;cout<<endl;
+for (i = 0; i < n; ++i) {
+	for (j = 0; j < n; ++j)
+	cout<<arr[i][j];
+	cout<<endl;
+}
+cout<<endl;cout<<endl;
+int t,co=n-1;
+for (i = 0; i < n; i++,co--) {
+	t=arr[i][i];
+	arr[i][i]=arr[i][co];
+	arr[i][co]=t;
+
+}
+cout<<endl;cout<<endl;
+for (i = 0; i < n; ++i) {
+	for (j = 0; j < n; ++j)
+	cout<<arr[i][j];
+	cout<<endl;
+}
+
+
+
+   return 0;
+}
